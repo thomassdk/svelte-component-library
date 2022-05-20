@@ -3,13 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier',
-    'plugin:storybook/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking', 'prettier', 'plugin:storybook/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -26,5 +20,6 @@ module.exports = {
   }],
   settings: {
     'svelte3/typescript': () => require('typescript') // pass the TypeScript package to the Svelte plugin
+
   }
 };
