@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
+    "@iconify/json": "^2.1.47",
     "@storybook/addon-actions": "^6.5.3",
     "@storybook/addon-essentials": "^6.5.3",
     "@storybook/addon-interactions": "^6.5.3",
@@ -42,6 +43,7 @@
     "tinro": "^0.6.12",
     "tslib": "^2.3.1",
     "typescript": "^4.5.4",
+    "unplugin-icons": "^0.14.3",
     "vite": "^2.9.9"
   },
   "dependencies": {
