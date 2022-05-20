@@ -19,7 +19,9 @@
    */
   export let label = '';
 
-  let mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  let mode = primary
+    ? 'storybook-button--primary'
+    : 'storybook-button--secondary';
 
   let style = backgroundColor ? `background-color: ${backgroundColor}` : '';
 
@@ -37,6 +39,7 @@
   type="button"
   class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
   {style}
-  on:click={onClick}>
+  on:click={onClick}
+>
   {label}
 </button>

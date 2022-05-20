@@ -1,22 +1,22 @@
-import colors from './colors'
-import "@fontsource/source-serif-pro"
-import "@fontsource/libre-franklin"
+import colors from './colors';
+import '@fontsource/source-serif-pro';
+import '@fontsource/libre-franklin';
 
 const fonts = {
   headings: '"Source Serif Pro", serif',
   body: '"Libre Franklin", sans-serif',
   // https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/
   size: {
-    xs: "0.75rem",
-    sm: "0.875rem",
-    md: "1rem",
-    lg: "1.125rem",
-    xl: "1.3125rem",
-    xl2: "1.5rem",
-    xl3: "2.652rem",
-    xl4: "4rem",
-  }
-}
+    xs: '0.75rem',
+    sm: '0.875rem',
+    md: '1rem',
+    lg: '1.125rem',
+    xl: '1.3125rem',
+    xl2: '1.5rem',
+    xl3: '2.652rem',
+    xl4: '4rem',
+  },
+};
 
 export default {
   light: {
@@ -39,4 +39,4 @@ export default {
       secondary: colors.indigo[500],
     },
   },
-}
+};

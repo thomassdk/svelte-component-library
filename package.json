@@ -13,7 +13,8 @@
     "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
     "prelint": "npm run format",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
@@ -34,6 +35,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-storybook": "^0.5.12",
     "eslint-plugin-svelte3": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.48.0",
@@ -51,5 +54,8 @@
     "@fontsource/open-sans": "^4.5.10",
     "@fontsource/source-serif-pro": "^4.5.7",
     "svelte-themer": "^0.5.5"
+  },
+  "lint-staged": {
+    "*.{svelte,ts,json}": "npm run format"
   }
 }
