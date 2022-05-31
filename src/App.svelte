@@ -1,11 +1,20 @@
 <script lang="ts">
   import { ThemeWrapper } from 'svelte-themer';
+  import ProgressBar from './ProgressBar.svelte';
   import themes from './themes';
+
+  //TODO: Add this to the storybook somehow
+  let min = 0;
+  let max = 100;
+  let value = 0;
+  setInterval(() => {
+    value = (value + 1) % 100;
+  }, 50);
 </script>
 
 <ThemeWrapper {themes}>
   <main>
-    <h1>Hello Project!</h1>
+    <ProgressBar bind:min bind:max bind:value />
   </main>
 </ThemeWrapper>
 
