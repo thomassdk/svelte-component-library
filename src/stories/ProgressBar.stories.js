@@ -2,7 +2,7 @@ import ProgressBar from '../ProgressBar.svelte';
 
 export default {
   component: ProgressBar,
-  title: 'ProgressBar',
+  title: 'Progress Bar',
   argTypes: {
     min: { type: 'number' },
     max: { type: 'number' },

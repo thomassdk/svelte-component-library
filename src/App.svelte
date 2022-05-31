@@ -1,7 +1,8 @@
 <script lang="ts">
   import { ThemeWrapper } from 'svelte-themer';
-  import ProgressBar from './ProgressBar.svelte';
   import themes from './themes';
+  import ProgressBar from './ProgressBar.svelte';
+  import ComboboxSelectOnly from './ComboboxSelectOnly.svelte';
 
   //TODO: Add this to the storybook somehow
   let min = 0;
@@ -15,6 +16,23 @@
 <ThemeWrapper {themes}>
   <main>
     <ProgressBar bind:min bind:max bind:value />
+    <ComboboxSelectOnly
+      label="Favorite Fruit"
+      options={[
+        'Apple',
+        'Banana',
+        'Blueberry',
+        'Boysenberry',
+        'Cherry',
+        'Cranberry',
+        'Durian',
+        'Eggplant',
+        'Fig',
+        'Grape',
+        'Guava',
+        'Huckleberry',
+      ]}
+    />
   </main>
 </ThemeWrapper>
 
@@ -40,5 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 </style>
